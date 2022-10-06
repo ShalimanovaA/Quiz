@@ -1,83 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/Bac_base"
+    android:background="@drawable/bac_base"
+
     android:orientation="vertical"
     android:tag="button"
+    app:layoutDescription="@xml/activity_main_scene"
     tools:context=".MainActivity">
 
-    <!--    <TextView
-
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="95dp"
-        android:layout_marginTop="300dp"
-        android:shadowColor="@color/design_default_color_secondary_variant"
-        android:shadowDx="5"
-        android:shadowDy="5"
-        android:shadowRadius="15"
-        android:text="Викторина"
-        android:textColor="@color/black"
-        android:textSize="45sp" />-->
-    <!--вниз shadowDy, вправо shadowDx,обязательно радиус -->
-    <!--<TextView
-        android:id="@+id/result"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="88dp"
-        android:layout_marginTop="490dp"
-        android:text="Результаты"
-        android:textColor="@color/black"
-        android:textSize="45sp" />-->
-
-    <!--    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/quiz"
-        android:orientation="horizontal"></LinearLayout>-->
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/quiz"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="390dp"
-        android:background="@color/cardview_shadow_end_color"
-        android:text="Викторина"
-        android:textColor="@color/black"
-        android:textSize="45sp" />
-
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/result"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="490dp"
-        android:color="#C8986C"
-
-        android:shadowDx="2"
-        android:shadowDy="2"
-        android:shadowRadius="2"
-        android:text="Результаты"
-
-        android:textColor="#C0986C"
-        android:textSize="45sp" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="155dp"
-        android:layout_marginTop="303dp"
-        android:layout_marginEnd="162dp"
-        android:alpha="0.25"
-        android:text="Button"
-        android:visibility="visible" />
+        android:id="@+id/quiz"
+        android:layout_width="286dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="456dp"
+        android:text="@string/quiz"
+        android:textColor="#4E342E"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck" />
 
+    <Button
+        android:id="@+id/result"
+        android:layout_width="286dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="116dp"
+        android:text="@string/result"
+        android:textColor="@color/b3"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quiz"
+        app:layout_constraintVertical_bias="0.571"
+        tools:ignore="TextContrastCheck,TextContrastCheck" />
 
-</RelativeLayout>
+</androidx.constraintlayout.motion.widget.MotionLayout>

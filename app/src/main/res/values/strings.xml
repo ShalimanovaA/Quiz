@@ -1,3 +1,6 @@
 <resources>
-    <string name="app_name">Quiz</string>
+    <string name="app_name" translatable="false">Quiz</string>
+    <string name="quiz" translatable="false">quiz</string>
+    <string name="result" translatable="false">result</string>
+
 </resources>
