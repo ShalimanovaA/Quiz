@@ -4,4 +4,9 @@
     <string name="result" translatable="false">result</string>
     <string name="gotomain" translatable="false">home</string>
 
+    <string name="button1" translatable="false">1</string>
+    <string name="button2" translatable="false">1</string>
+    <string name="button3" translatable="false">1</string>
+    <string name="button4" translatable="false">1</string>
+
 </resources>
