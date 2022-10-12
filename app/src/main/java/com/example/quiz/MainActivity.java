@@ -2,10 +2,13 @@ package com.example.quiz;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,26 +17,45 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //соединяем объекты с их id
-        /*final LinearLayout quiz = findViewById(R.id.quiz);
-        final LinearLayout results = findViewById(R.id.result);*/
+//соединяем объекты с их id
 
-        /*//поведение при нажатии
-        quiz.setOnClickListener(new View.OnClickListener() {
+        /*//кнопка quiz
+        Button btnQuiz = findViewById(R.id.quiz);
+        btnQuiz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
             }
         });
-        results.setOnClickListener(new View.OnClickListener() {
+        //кнопка result
+        Button btnResult = findViewById(R.id.result);
+        btnResult.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
 
             }
         });*/
-    }
-/*    protected void startQuizActivity(View v){//переход на страницу с викториной
-        //записали в onclick и класс intent работает с активити
+        }
+
+
+
+
+    //нажатие кнопки Quiz
+    public void btnClickQuiz(View view){
+        //переход на другую страницу с помощтю класса Intent
         Intent intent = new Intent(this,QuizActivity.class);
         startActivity(intent);
+    }
+    //нажатие кнопки Result
+    public void btnClickResult(View view){
+
+    }
+    /*/
+    private void showInfo(String text){
+        //всплывающее окно
+
+        Toast.makeText(this,text,Toast.LENGTH_LONG).show();
+
     }*/
 }

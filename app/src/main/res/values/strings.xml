@@ -2,5 +2,6 @@
     <string name="app_name" translatable="false">Quiz</string>
     <string name="quiz" translatable="false">quiz</string>
     <string name="result" translatable="false">result</string>
+    <string name="gotomain" translatable="false">home</string>
 
 </resources>
